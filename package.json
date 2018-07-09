@@ -22,8 +22,8 @@
     "postinstall": "npm run lint:fix"
   },
   "build": {
-    "productName": "infinite-inventory",
-    "appId": "org.simulatedgreg.electron-vue",
+    "productName": "Infinite Inventory",
+    "appId": "lab.heisenbugs.electron-vue.infinite-inventory",
     "directories": {
       "output": "build"
     },
@@ -49,6 +49,7 @@
       "icon": "build/icons/icon.icns"
     },
     "win": {
+      "target": "portable",
       "icon": "build/icons/icon.ico"
     },
     "linux": {
