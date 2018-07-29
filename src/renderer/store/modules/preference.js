@@ -3,10 +3,15 @@ const state = {
   putty: undefined
 }
 
-const mutations = {
-}
+const mutations = {}
 
 const actions = {
+  load: function () {
+
+  },
+  save: function () {
+
+  }
 }
 
 export default {

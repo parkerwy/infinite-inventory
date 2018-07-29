@@ -1,10 +1,10 @@
 <template>
     <v-app v-cloak>
-        <v-navigation-drawer clipped fixed v-model="drawer" app>
+        <v-navigation-drawer clipped fixed v-model="drawer" app width="180">
             <v-list dense>
                 <v-list-tile :to="{name: 'Home'}" exact>
                     <v-list-tile-action>
-                        <v-icon>home</v-icon>
+                        <v-icon color="primary">home</v-icon>
                     </v-list-tile-action>
                     <v-list-tile-content>
                         <v-list-tile-title>Home</v-list-tile-title>
@@ -13,7 +13,7 @@
                 <v-divider></v-divider>
                 <v-list-tile :to="{name: 'App'}">
                     <v-list-tile-action>
-                        <v-icon>fa-rocket</v-icon>
+                        <v-icon color="indigo">fa-rocket</v-icon>
                     </v-list-tile-action>
                     <v-list-tile-content>
                         <v-list-tile-title>Apps</v-list-tile-title>
@@ -21,7 +21,7 @@
                 </v-list-tile>
                 <v-list-tile :to="{name: 'Environment'}">
                     <v-list-tile-action>
-                        <v-icon>fa-server</v-icon>
+                        <v-icon color="amber">fa-server</v-icon>
                     </v-list-tile-action>
                     <v-list-tile-content>
                         <v-list-tile-title>Environments</v-list-tile-title>
@@ -29,7 +29,7 @@
                 </v-list-tile>
                 <v-list-tile :to="{name: 'Cluster'}">
                     <v-list-tile-action>
-                        <v-icon>fa-server</v-icon>
+                        <v-icon color="yellow">fa-server</v-icon>
                     </v-list-tile-action>
                     <v-list-tile-content>
                         <v-list-tile-title>Clusters</v-list-tile-title>
@@ -37,7 +37,7 @@
                 </v-list-tile>
                 <v-list-tile :to="{name: 'Server'}">
                     <v-list-tile-action>
-                        <v-icon>fa-server</v-icon>
+                        <v-icon color="blue">fa-server</v-icon>
                     </v-list-tile-action>
                     <v-list-tile-content>
                         <v-list-tile-title>Servers</v-list-tile-title>
@@ -45,7 +45,7 @@
                 </v-list-tile>
                 <v-list-tile :to="{name: 'Host'}">
                     <v-list-tile-action>
-                        <v-icon>fa-server</v-icon>
+                        <v-icon color="green">fa-server</v-icon>
                     </v-list-tile-action>
                     <v-list-tile-content>
                         <v-list-tile-title>Hosts</v-list-tile-title>
@@ -54,7 +54,7 @@
                 <v-divider></v-divider>
                 <v-list-tile :to="{name: 'Preference'}">
                     <v-list-tile-action>
-                        <v-icon>settings</v-icon>
+                        <v-icon color="primary">settings</v-icon>
                     </v-list-tile-action>
                     <v-list-tile-content>
                         <v-list-tile-title>Preference</v-list-tile-title>
@@ -63,7 +63,7 @@
                 <v-divider></v-divider>
                 <v-list-tile @click="quit()">
                     <v-list-tile-action>
-                        <v-icon>fa-sign-out-alt</v-icon>
+                        <v-icon color="red">fa-sign-out-alt</v-icon>
                     </v-list-tile-action>
                     <v-list-tile-title>Quit</v-list-tile-title>
                 </v-list-tile>
@@ -82,7 +82,7 @@
 
         <v-footer color="primary" app fixed dark>
             <v-layout row wrap justify-center>
-                <span fluid>built with <v-icon small color="yellow">fa-coffee</v-icon> coffee</span>
+                <span fluid>In Code We Trust</span>
             </v-layout>
         </v-footer>
     </v-app>
