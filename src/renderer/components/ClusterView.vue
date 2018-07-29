@@ -1,12 +1,12 @@
 <template>
     <v-layout>
-        Home View
+        Cluster View
     </v-layout>
 </template>
 
 <script>
   export default {
-    name: 'home-view',
+    name: 'cluster-view',
     data: () => ({
     }),
     methods: {

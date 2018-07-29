@@ -11,20 +11,45 @@
                     </v-list-tile-content>
                 </v-list-tile>
                 <v-divider></v-divider>
-                <v-list-tile>
-                    <v-list-tile-title>Apps</v-list-tile-title>
+                <v-list-tile :to="{name: 'App'}">
+                    <v-list-tile-action>
+                        <v-icon>fa-rocket</v-icon>
+                    </v-list-tile-action>
+                    <v-list-tile-content>
+                        <v-list-tile-title>Apps</v-list-tile-title>
+                    </v-list-tile-content>
                 </v-list-tile>
-                <v-list-tile>
-                    <v-list-tile-title>Environments</v-list-tile-title>
+                <v-list-tile :to="{name: 'Environment'}">
+                    <v-list-tile-action>
+                        <v-icon>fa-server</v-icon>
+                    </v-list-tile-action>
+                    <v-list-tile-content>
+                        <v-list-tile-title>Environments</v-list-tile-title>
+                    </v-list-tile-content>
                 </v-list-tile>
-                <v-list-tile>
-                    <v-list-tile-title>Clusters</v-list-tile-title>
+                <v-list-tile :to="{name: 'Cluster'}">
+                    <v-list-tile-action>
+                        <v-icon>fa-server</v-icon>
+                    </v-list-tile-action>
+                    <v-list-tile-content>
+                        <v-list-tile-title>Clusters</v-list-tile-title>
+                    </v-list-tile-content>
                 </v-list-tile>
-                <v-list-tile>
-                    <v-list-tile-title>Servers</v-list-tile-title>
+                <v-list-tile :to="{name: 'Server'}">
+                    <v-list-tile-action>
+                        <v-icon>fa-server</v-icon>
+                    </v-list-tile-action>
+                    <v-list-tile-content>
+                        <v-list-tile-title>Servers</v-list-tile-title>
+                    </v-list-tile-content>
                 </v-list-tile>
-                <v-list-tile>
-                    <v-list-tile-title>Hosts</v-list-tile-title>
+                <v-list-tile :to="{name: 'Host'}">
+                    <v-list-tile-action>
+                        <v-icon>fa-server</v-icon>
+                    </v-list-tile-action>
+                    <v-list-tile-content>
+                        <v-list-tile-title>Hosts</v-list-tile-title>
+                    </v-list-tile-content>
                 </v-list-tile>
                 <v-divider></v-divider>
                 <v-list-tile :to="{name: 'Preference'}">
@@ -47,7 +72,6 @@
         <v-toolbar app clipped-left fixed color="primary white--text">
             <v-toolbar-side-icon @click.stop="drawer = !drawer" color="accent"></v-toolbar-side-icon>
             <v-toolbar-title>
-                <v-icon color="yellow">fa-feather</v-icon>
                 Infinite Inventory
             </v-toolbar-title>
             <v-spacer></v-spacer>

@@ -6,10 +6,12 @@
   </v-layout>
 </template>
 
-<style scoped>
-  img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+<script>
+  export default {
+    name: 'preference-view',
+    data: () => ({
+    }),
+    methods: {
+    }
   }
-</style>
+</script>

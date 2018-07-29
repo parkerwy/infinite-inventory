@@ -1,12 +1,12 @@
 <template>
     <v-layout>
-        Home View
+        Host View
     </v-layout>
 </template>
 
 <script>
   export default {
-    name: 'home-view',
+    name: 'host-view',
     data: () => ({
     }),
     methods: {
