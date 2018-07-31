@@ -1,20 +1,23 @@
 const state = {
-  file: undefined,
-  putty: undefined
+  inventoryDataFile: '',
+  putty: 'putty.exe',
+  winscp: 'winscp.exe'
 }
 
-const mutations = {}
+const mutations = {
+  updatePreference: function (state, pref) {
+    Object.assign(state, pref)
+  }
+}
 
 const actions = {
-  load: function () {
-
-  },
-  save: function () {
-
+  save: function (context, pref) {
+    context.commit('updatePreference', pref)
   }
 }
 
 export default {
+  namespaced: true,
   state,
   mutations,
   actions
